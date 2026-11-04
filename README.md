@@ -18,27 +18,15 @@ Docker, Nginx, dan MariaDB itu sendiri tetap terinstall; tunnel Cloudflare lain 
 
 - Dijalankan sebagai **root** di VPS panel (Ubuntu/Debian dengan systemd)
 
-## Cara Pakai — Pilih 2 Model
+## Cara Pakai — Bash (1 perintah)
 
-### Model 1 — Bash (1 perintah, langsung jalan dari GitHub)
+Ini satu-satunya cara pakai yang disarankan. Tidak perlu download apa pun — jalankan di VPS panel sebagai root:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/Lngtmi/uninstall-all/main/uninstall-all.sh)
 ```
 
-### Model 2 — Source Code (download / clone dulu)
-
-```bash
-git clone https://github.com/Lngtmi/uninstall-all.git
-cd uninstall-all
-sudo bash uninstall-all.sh
-```
-
-Script akan meminta kamu mengetik `HAPUS-SEMUA` sebelum menghapus apa pun. Untuk pemakaian non-interaktif (otomatisasi), tambahkan `--yes`:
-
-```bash
-sudo bash uninstall-all.sh --yes
-```
+Script akan meminta kamu mengetik `HAPUS-SEMUA` sebelum menghapus apa pun. Untuk pemakaian non-interaktif (otomatisasi), tambahkan `--yes` di akhir perintah yang sama.
 
 ## Kontak
 
